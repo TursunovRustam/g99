@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button{
+  cursor: pointer;
+}
+.wrapper{
+  max-width: 1170px;
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  height: 70px;
+  background: #FCEFE4;
+  position: sticky;
+  top: 0;
+  padding-left: 19px;
+  padding-right: 19px;
+  z-index: 3;
+  .wrapper{
+    .menubar{
+      display: none;
+    }
+    .rightSide{
+      display: flex;
+      gap: 19.5px;
+      img{
+        max-width: 46px;
+        max-height: 46px;
+      }
+    }
+    @media screen and (max-width: 434px) {
+      .rightSide{
+        display: none;
+      }
+    }
+  }
+}
